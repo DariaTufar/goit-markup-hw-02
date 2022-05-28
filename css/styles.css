@@ -36,8 +36,14 @@ h1 {
     
 }
 
+ .btn {
 
-/* HEADER */
+ }
+
+ .visually-hidden {
+     overflow: hidden;
+ }
+/*-------------------------- HEADER---------------- */
 
 .header {
     background-color: var(--primary-white-color);
@@ -104,19 +110,19 @@ h1 {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     font-family: var(--main-font-family);
 }
 
- 
+
+
+/* --------------------ЧЕМ МЫ ЗАНИМАЕМСЯ------------------- */
 .about-us {
     background-color: #E5E5E5;
 
 }
 
-.visually-hidden {
-    overflow: hidden;
-}
+
 
 .about-us-list {}
 
@@ -159,7 +165,7 @@ h1 {
 
 .our-work-image {}
 
-
+/*--------------------------- НАША КОМАНДА -------------------*/
 
 .team {
     background: #F5F4FA
@@ -192,17 +198,18 @@ h1 {
     font-size: 16px;
     line-height: 1.19;
     /* identical to box height */
-font-style: normal;
+    font-style: normal;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
 
 .team-member-position {
     color: var(--primary-text-color);
-    
 }
 
+/* -------------------ЧЕМ МЫ ЗАНИМАЕМСЯ---------------------- */
 .footer-main {
+
     background-color:  #2F303A;
 }
 
@@ -221,42 +228,99 @@ font-style: normal;
 
 
 
- .footer-contact-item {}
+ .footer-contact-item {
+   
+ }
 
  .footer-contact-adress {
-    font-family: var(--main-font-family);
+    /* font-family: var(--main-font-family); */
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
+    font-style: normal;
     color:var(--primary-white-color);
  }
  
  .footer-contact-email {
-    font-family: var(--main-font-family);
+    /* font-family: var(--main-font-family); */
     font-weight: 400;
     font-size: 14px;
     line-height:  1.71;
     letter-spacing: 0.03em;
-
+    text-decoration: none;
+    font-style: normal;
     color: #ffffff99;
 
  }
 
  .footer-number {
-    font-family: var(--main-font-family);
+    /* font-family: var(--main-font-family); */
     font-weight: 400;
     font-size: 14px;
     line-height:  1.71;
     letter-spacing: 0.03em;
+    font-style: normal;
 
     color: #ffffff99;
  }
 
 /* -------------------PAGE2 - PORTFOLIO-------------- */
 
-.portfolio-filer-button {
+.portfolio-examples{
+
+}
+
+.portfolio-filter-list {
+
+}
+
+.portfolio-filter-btn {
+ 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--title-text-color);
+    background-color:#F5F4FA;  
+    font-family: var(--main-font-family);
+}
+
+.current {
+    color: var(--primary-white-color) ;
     background-color: var(--accent-color);
-    color: white;
-    /* hover active  */}
+}
+
+.portfolio-examples-list {}
+
+.portfolio-examples-item {
+    background-color: var(--primary-white-color);
+}
+
+.portfolio-examples-link {
+    text-decoration: none;
+}
+
+.portfolio-examples-foto {}
+
+.portfolio-examples-title {
+    font-family: var(--main-font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.portfolio-examples-descr {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
