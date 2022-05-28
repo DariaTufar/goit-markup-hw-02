@@ -4,7 +4,6 @@
     --accent-color:#2196F3 ;
     --primary-white-color: #FFFFFF;
     --main-font-family: "Roboto" , sans-serif;
-    
 }
 
 body {
@@ -14,17 +13,13 @@ body {
 }
 
 h1 {
-    font-family: var(--main-font-family);
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: var(--primary-white-color);
-
 }
 
 .list {
@@ -33,16 +28,17 @@ h1 {
 
 .link {
     text-decoration: none;
-    
 }
 
  .btn {
-
+    cursor: pointer;
+    font-family: inherit;
  }
 
- .visually-hidden {
-     overflow: hidden;
+.visually-hidden { 
+    overflow: hidden; 
  }
+
 /*-------------------------- HEADER---------------- */
 
 .header {
@@ -62,7 +58,7 @@ h1 {
     color: var(--accent-color);
 }
 
-.header-logo-2 {
+.header-logo-blueblack {
     color:var(--title-text-color)
 }
 .header-list {
@@ -73,15 +69,18 @@ h1 {
     line-height: 1.14;
     font-weight: 500;
     letter-spacing: 0.02em;
-    color: var(--title-text-color);
-    font-family:var(--main-font-family);
+    color: var(--title-text-color);  
 }
 
 .header-link {
     color: var(--title-text-color);
 }
 
-.header-link:hover {
+.header-link:hover, .header-link:focus, .header-link:active {
+    color: var(--accent-color);
+}
+
+.current-page {
     color: var(--accent-color);
 }
 
@@ -94,13 +93,13 @@ h1 {
 .contact-item:hover{
     color: var(--accent-color)
 }
-/* -------------------MAIN---------------------- */
+/* -----------------------------------MAIN---------------------- */
 
 .hero {
     background-color: #2F303A;
 }
 
-.btn-main {
+.btn-hero {
    
     font-weight: 700;
     font-size: 16px;
@@ -111,25 +110,24 @@ h1 {
     letter-spacing: 0.06em;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-    font-family: var(--main-font-family);
 }
 
+.btn-hero:hover {
+    background-color:
+     #188CE8;
+}
 
-
-/* --------------------ЧЕМ МЫ ЗАНИМАЕМСЯ------------------- */
+/* ------------------------------НАШИ ПРЕИМУЩЕСТВА------------------- */
 .about-us {
     background-color: #E5E5E5;
 
 }
-
-
 
 .about-us-list {}
 
 .about-us-item {}
 
 .about-us-title {
-
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -139,7 +137,6 @@ h1 {
 }
 
 .about-us-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -149,7 +146,6 @@ h1 {
 .our-work {}
 
 .our-work-title {
-    font-family: var(--main-font-family)
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -173,7 +169,6 @@ h1 {
 }
 
 .team-title {
-    font-family: var(--main-font-family)
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -192,13 +187,9 @@ h1 {
 .team-member-foto {}
 
 .team-member-name {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    /* identical to box height */
-    font-style: normal;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
@@ -207,7 +198,7 @@ h1 {
     color: var(--primary-text-color);
 }
 
-/* -------------------ЧЕМ МЫ ЗАНИМАЕМСЯ---------------------- */
+/* -------------------ФУТЕР---------------------- */
 .footer-main {
 
     background-color:  #2F303A;
@@ -218,22 +209,19 @@ h1 {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    /* identical to box height */
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--accent-color);
 }
-
+.footer-logo-bluewhite{
+    color: var(--primary-white-color);
+}
  .footer-contact-list {}
 
+ .footer-contact-item { }
 
-
- .footer-contact-item {
-   
- }
 
  .footer-contact-adress {
-    /* font-family: var(--main-font-family); */
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -242,41 +230,43 @@ h1 {
     color:var(--primary-white-color);
  }
  
- .footer-contact-email {
-    /* font-family: var(--main-font-family); */
-    font-weight: 400;
+
+
+ .footer-contact-link {
+ 
     font-size: 14px;
     line-height:  1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
     font-style: normal;
-    color: #ffffff99;
+    color: rgba(255, 255, 255, 0.6);
 
  }
 
- .footer-number {
-    /* font-family: var(--main-font-family); */
-    font-weight: 400;
+ 
+
+.footer-number {
+
     font-size: 14px;
     line-height:  1.71;
     letter-spacing: 0.03em;
     font-style: normal;
-
-    color: #ffffff99;
+    color: rgba(255, 255, 255, 0.6);
  }
 
-/* -------------------PAGE2 - PORTFOLIO-------------- */
+.footer-contact-adress:active, .footer-contact-adress:focus, .footer-contact-adress:hover,
+.footer-contact-link:active, .footer-contact-link:focus, .footer-contact-link:hover,
+.footer-number:active  .footer-number:focus, .footer-number:hover{
+    color: var(--accent-color);
+ }
 
-.portfolio-examples{
+/* -------------------PAGE2--- - PORTFOLIO-------------- */
 
-}
+.portfolio-examples{}
 
-.portfolio-filter-list {
-
-}
+.portfolio-filter-list {}
 
 .portfolio-filter-btn {
- 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -284,14 +274,17 @@ h1 {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-
     color: var(--title-text-color);
     background-color:#F5F4FA;  
-    font-family: var(--main-font-family);
 }
 
-.current {
-    color: var(--primary-white-color) ;
+.portfolio-filter-btn:hover, .portfolio-filter-btn:focus, .portfolio-filter-btn:active {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.current-btn {
+    color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
 
@@ -308,7 +301,6 @@ h1 {
 .portfolio-examples-foto {}
 
 .portfolio-examples-title {
-    font-family: var(--main-font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -317,8 +309,6 @@ h1 {
 }
 
 .portfolio-examples-descr {
-    font-family: var(--main-font-family);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;

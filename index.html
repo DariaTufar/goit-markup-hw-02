@@ -13,23 +13,21 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"     rel="stylesheet">
 
         <link rel="stylesheet" href="./css/styles.css">
-
     </head>
 
     <body>
         <header class="header">
             <nav class="header-nav">
-                <a  href="#" class="header-logo" lang="en"> Web<span class="header-logo-2">Studio     
+                <a  href="#" class="header-logo" lang="en"> Web<span class="header-logo-blueblack">Studio</span>     
                 </a>
 
                 <ul class="header-list list">
                     <!-- add a link later -->
-                    <li class="header-item"> <a target="_blank" href ="#"  class="header-link link"  >Студия </a> </li>
+                    <li class="header-item"> <a target="_blank" href ="#"  class="header-link link current-page"  >Студия </a> </li>
                     <li class="header-item"> <a target="_blank" href="./portfolio.html" class="header-link link" >Портфолио </a> </li>
                     <li class="header-item"> <a target="_blank" href="#" class="header-link link">Контакты </a> </li>
                 </ul>
             </nav>
- 
               <!--  contact is different than in a header -->
                 <ul class="header-contact list">
                     <li><a href="mailto:info@devstudio.com" class="contact-item link">
@@ -41,14 +39,13 @@
         <main>
             <section class="hero">
                 <h1>Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="btn-main btn" >Заказать услугу</button>
+                <button type="button" class="btn-hero btn" >Заказать услугу</button>
             </section>
-            
-                        
-            
+
             <section class ="about-us">  
                 <!-- dont forget to hide h2  Наши преимущества- its not on the  figma markup -->
-                <h2 class="visually-hidden" >Наши преимущества</h2>
+                <h2 aria-hidden="true" class="visually-hidden" >Наши преимущества</h2>
+
                 <ul class="about-us-list list">
                     <li class="about-us-item">
                         <h3 class="about-us-title">Внимание к деталям </h3>
@@ -81,7 +78,6 @@
                         alt="чем мы занимаемся -фото компьютера"
                         width="370"
                         height="294"/> 
-                        
                     </li>
 
                     <li class="our-work-item">
@@ -90,7 +86,6 @@
                         alt="чем мы занимаемся - фото компьютера2"
                         width="370"
                         height="294"/>  
-                        
                     </li>
 
                     <li class="our-work-item">
@@ -99,7 +94,6 @@
                         alt="чем мы занимаемся - фото компьютера3"
                         width="370" 
                         height="294" />
-                        
                     </li>
                 </ul>
             </section>
@@ -112,7 +106,8 @@
                         class= "team-member-foto"
                          width="270"  height="260">
                         <h3 class="team-member-name">Игорь Демьяненко</h3>
-                        <p lang="en" class="team-member-position"> Product Designer</p>                        
+                        <p lang="en" class="team-member-position"> Product Designer
+                        </p>                        
                     </li>
 
                     <li class="team-member">
@@ -120,7 +115,8 @@
                         class= "team-member-foto"
                         width="270"  height="260">
                         <h3  class="team-member-name" >Ольга Репина</h3>
-                        <p lang="en" class="team-member-position">Frontend Developer</p>                        
+                        <p lang="en" class="team-member-position">Frontend Developer
+                        </p>                        
                     </li>
 
                     <li class="team-member">
@@ -144,25 +140,28 @@
         </main>
         
         <footer class="footer-main">
-            <a class=footer-logo href="."> WebStudio </a>               
-                <address >
+            <a class=footer-logo href=".">
+                Web<span class="footer-logo-bluewhite">Studio</span> 
+            </a>               
+                <address>
                     <!-- contacts are different than in header -->
                     <ul class="footer-contact-list list">
+
                         <li class="footer-contact-item">
-                            <a class="footer-contact-adress link" 
+                            <a class="footer-contact-adress  link"  target="_blank"
                             href="https://goo.gl/maps/fVVCTX3WFLXZe7AJ9"> 
                             г. Киев, пр-т Леси Украинки, 26</a></li>
+
                         <li class="footer-contact-item" >
-                            <a class="footer-contact-email"
+                            <a class="footer-contact-link"
                              href = "mailto:info@example.com" >
                             info@example.com</a></li>
+
                         <li class="footer-contact-item">
                             <a class="footer-number link" 
                             href="tel:+380991111111">+38 099 111 11 11</a></li>
                     </ul>
                 </address>
         </footer>
-       
-         
-        </body>
-    </html>
+    </body>
+</html>
